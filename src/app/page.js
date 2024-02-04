@@ -11,13 +11,13 @@ export default function Landing() {
         }
     });
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center p-24">
-            <h1 className="text-6xl font-bold text-center">Spot Canvas</h1>
+        <main className="flex min-h-screen flex-col items-center justify-center pt-16">
+            <h1 className="text-6xl font-bold text-center">Canvasify</h1>
             <p className="text-2xl text-center">
-                A website to share your currently playing Spotify song in a beautiful frame.
+                A website to view your currently playing Spotify song in a beautiful frame.
             </p>
 
-            <Button className="my-8" size="4" variant="soft" asChild={true}>
+            <Button className="my-8 text-center" size="4" variant="soft" asChild={true}>
                 <Link href="/login">
                     <FaSpotify /> Login With Spotify
                 </Link>
