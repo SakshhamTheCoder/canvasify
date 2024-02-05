@@ -59,12 +59,17 @@ export default function Canvas() {
                     <div className="flex justify-center flex-col m-4 rounded-3xl bg-zinc-900 w-full md:w-1/2">
                         <div className="m-5 flex justify-center items-center flex-col sm:flex-row">
                             <img
-                                src={user.images[1].url}
+                                src={
+                                    user.images[1] == null
+                                        ? 'https://i.scdn.co/image/ab67616d00001e0299760923cfbfe739fb870817'
+                                        : user.images[1].url
+                                }
                                 alt={user.display_name}
                                 width={150}
                                 height={150}
                                 className="rounded-full mx-2"
                             />
+
                             <div className="flex flex-col items-center justify-center">
                                 <h1 className="text-4xl font-bold text-center m-2 overflow-ellipsis">
                                     Hi {user.display_name}
